@@ -1,0 +1,11 @@
+<h1>{{ 'descriptions' | title }}</h1>
+
+<ul>
+    {% for description in descriptions %}
+    <li>
+        <a href="{% url 'description' borough activity venue description %} "
+            >{{ description|title }}</a
+        >
+    </li>
+    {% endfor %}
+</ul>

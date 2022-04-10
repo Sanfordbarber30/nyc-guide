@@ -34,7 +34,8 @@ class VenueView(View):
             request=request,
             template_name='venues.html',
             context={'borough': borough, 'activity': activity,
-            'venue' : venue
-            [borough][activity][venue].keys()}
+            'venue' : venue, 'description' : boroughs
+            [borough][activity][venue]['description']}
         )
     pass
+
