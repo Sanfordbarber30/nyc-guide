@@ -25,7 +25,7 @@ class ActivityView(View):
             template_name='activities.html',
             context={'borough': borough, 'activity': activity, 'venues' :boroughs[borough][activity].keys()}
         )
-    pass
+# activity parameter for class ActivityView created for additional context that will be located on the html template "activities.html". 
 
 
 class VenueView(View):
@@ -37,5 +37,5 @@ class VenueView(View):
             'venue' : venue, 'description' : boroughs
             [borough][activity][venue]['description']}
         )
-    pass
-
+   
+# venue parameter for class ActivityView created for additional context that will be located on the html template "venues.html". 
